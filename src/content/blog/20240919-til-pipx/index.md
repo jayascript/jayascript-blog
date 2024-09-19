@@ -17,7 +17,9 @@ I've always been a bit of a command-line junkie, but managing Python tools has b
 
 Getting started with `pipx` was surprisingly straightforward. Here's what I did:
 
-1. **Installing pipx:** First, I had to get `pipx` itself up and running:
+### 1. **Installing pipx:** 
+
+First, I had to get `pipx` itself up and running:
 
    ```bash
    python3 -m pip install --user pipx
@@ -26,7 +28,9 @@ Getting started with `pipx` was surprisingly straightforward. Here's what I did:
 
    That second command was crucial – it made sure I could actually use the tools I installed with `pipx` from anywhere in my system. No more fiddling with PATH variables!
 
-2. **Taking It for a Spin:** I decided to test it out with `llm`, [a command-line LLM tool](https://llm.datasette.io) that I've been super excited to try:
+### 2. **Taking It for a Spin:** 
+
+I decided to test it out with `llm`, [a command-line LLM tool](https://llm.datasette.io) that I've been super excited to try:
 
    ```bash
    pipx install llm
@@ -34,7 +38,9 @@ Getting started with `pipx` was surprisingly straightforward. Here's what I did:
 
    And just like that, I had `llm` ready to go, without worrying about it messing with my other Python setups. It felt almost too easy.
 
-3. **Checking My New Toolkit:** Curious about what I'd set up, I ran:
+### 3. **Checking My New Toolkit:** 
+
+Curious about what I'd set up, I ran:
 
    ```bash
    pipx list
@@ -42,7 +48,9 @@ Getting started with `pipx` was surprisingly straightforward. Here's what I did:
 
    Seeing all my tools neatly organized was oddly satisfying. No more guessing what I've installed where.
 
-4. **Quick Clean-up:** Later, I realized I didn't need one of the tools I'd installed. No problem:
+### 4. **Quick Clean-up:** 
+
+Later, I realized I didn't need one of the tools I'd installed. No problem:
 
    ```bash
    pipx uninstall some-tool
