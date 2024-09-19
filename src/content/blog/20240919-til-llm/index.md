@@ -1,11 +1,12 @@
 ---
 title: "TIL: Supercharging My Terminal with LLM Integration"
 description: "Quick summary of things I learned today."
+slug: "til-llm"
 date: "09/19/2024"
 draft: false
 tags: ["TIL"]
 ---
-
+        
 Today, I took a deep dive into setting up the `llm` package on my local machine. This nifty tool allows you to interact with language models directly from your command line. While the process was relatively straightforward, I encountered a few steps worth documenting. Let's walk through the steps I took to get everything up and running smoothly.
 
 ## The Setup Process
@@ -58,6 +59,21 @@ Now you can chat with Claude using this shorthand:
 ```bash
 llm claude "What's the meaning of life, the universe, and everything?"
 ```
+
+## Using the LLM Package
+
+Here are some handy commands for working with `llm` in the command line:
+
+| cmd                            | purpose                                                                                                                |
+|:-------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
+| `llm -c <prompt>`              | Continue the chat from the previous prompt.                                                                            |
+| `llm models default <model>`   | Change the default model to use with the base `llm` command                                                            |
+| `llm -m <model> <prompt>`      | Send a prompt to a specific model                                                                                      |
+| `llm <prompt> > file.txt`      | Pipe the prompt output to a specific file                                                                              |
+| `llm logs path`                | View the logs; every cmd is stored in a sqlite database |
+| `datasette "$(llm logs path)"` | Use [Datasette](https://datasette.io/) to browse your chat history                                                                                                                       |
+
+
 
 ## The Power at Your Fingertips
 
